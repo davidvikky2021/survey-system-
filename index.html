@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<style>
+body{
+    margin:0;
+    background:#0d1020;
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+}
+.about-header{
+
+    padding:50px 10%;
+    text-align:center;
+    color:white;
+    background:;
+    width:85%;
+    max-width:850px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.about-header h4{
+
+    color:#FFD700;
+    letter-spacing:4px;
+    font-size:15px;
+    margin-bottom:15px;
+
+}
+
+.about-header h1{
+
+    font-size:35px;
+    margin-bottom:25px;
+
+}
+
+.about-header p{
+
+    max-width:900px;
+    margin:auto;
+    font-size:20px;
+    line-height:1.4;
+    color:#f5f5f5;
+
+}
+
+.about-header hr{
+
+    width:250px;
+    height:4px;
+    background:#FFD700;
+    border:none;
+    margin:40px auto;
+
+}
+
+.project-details{
+
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:40px;
+    font-size:18px;
+    font-weight:bold;}
+    
+.about-teams{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    padding:40px 0;
+}
+
+.team-card{
+
+    position:relative;
+
+    padding:80px 25px 30px;
+
+    margin-bottom:50px;
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.4);
+
+}
+
+.icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:45px;
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    top:5px;
+
+    background:rgba(255,255,255,.15);
+
+    backdrop-filter:blur(10px);
+
+}
+
+.team-card h2{
+
+    font-size:48px;
+
+    margin-top:15px;
+
+    margin-bottom:15px;
+
+}
+
+.team-card p{
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+    color:#eeeeee;
+
+    margin-bottom:30px;
+
+}
+
+.members{
+
+    max-height:250px;
+
+    overflow-y:auto;
+
+    padding-right:5px;
+
+}
+
+.member{
+
+    background:rgba(255,255,255,.12);
+
+    margin:12px 0;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.member:hover{
+
+    background:rgba(255,255,255,.22);
+
+    transform:scale(1.02);
+
+}
+.members{
+    display:none;
+    margin-top:20px;
+    max-height:250px;
+    overflow-y:auto;
+}
+
+.members.show{
+    display:block;
+}
+
+.toggle-btn{
+    background:white;
+    color:#4B0082;
+    border:none;
+    padding:12px 22px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.toggle-btn:hover{
+    transform:scale(1.05);
+}
+
+/* Team Colors */
+
+.frontend{
+
+    background:#5C6BC0;
+
+}
+
+.backend{
+
+    background:#696969;
+
+}
+
+.testing{
+
+    background:#6B8E6E;
+
+}
+
+.docs{
+
+    background:#7A7F87;
+}
+
+/* Scrollbar */
+
+.members::-webkit-scrollbar{
+
+    width:8px;
+
+}
+
+.members::-webkit-scrollbar-thumb{
+
+    background:white;
+
+    border-radius:20px;
+
+}
+
+.members::-webkit-scrollbar-track{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+@media(max-width:768px){
+
+.team-card h2{
+
+font-size:38px;
+
+}
+
+.icon{
+
+width:80px;
+
+height:80px;
+
+font-size:45px;
+
+}
+
+.title{
+
+font-size:34px;
+
+}
+
+}</style>
+
+<section class="about-teams">
+<header>
+<header class="about-header">
+
+    <h4>ABOUT OUR PROJECT</h4>
+
+    <h1>🌐 Building Solutions Through Teamwork</h1>
+
+    <p>
+      This website was developed as part of the <strong>COS 121 (Introduction to Computer Programming)</strong> course at the
+            <strong>University of Uyo, Akwa Ibom State, Nigeria</strong>.
+            The project is a collaborative effort involving students from
+            different departments and faculties, demonstrating teamwork,
+            creativity, and practical programming skills in the design and
+            development of a modern web application.
+    </p>
+
+    <hr>
+<section class="why-project">
+
+    <h2>💡 Purpose of the Project</h2>
+
+    <p>
+        This project was created as part of the requirements for the
+        <strong>COS 121 – Introduction to Computer Programming</strong>
+        course at the <strong>University of Uyo</strong>. It provides
+        students with an opportunity to apply the programming concepts
+        learned in the classroom to the development of a real-world web
+        application.
+    </p>
+    <br><br>
+    <p>
+        The project encourages collaboration among students from different
+        departments and faculties, allowing them to work together, share
+        ideas, and combine their skills to achieve a common goal. It also
+        helps students develop problem-solving, communication, and project
+        management skills that are essential in the technology industry.
+    </p>
+    <br><br> 
+    <p>
+        Through the design and implementation of this website, students gain
+        practical experience in planning, developing, testing, and
+        documenting software while following professional standards and best
+        practices in web development.
+    </p>
+
+</section>
+<hr>
+    <div class="project-info">
+
+        <div class="info-box">
+
+            <h2>🎯 Project Goal</h2>
+
+            <p>To design and develop a professional, user-friendly, interactive components, mobile compatibility and responsive website.</p>
+    </div>
+<hr>
+    <div class="info-box">
+
+        <h2>🤝 Team Collaboration</h2>
+
+            <p>Frontend • Backend • Testing • Documentation</p>
+    </div>
+</header>    
+<script>
+function toggleMembers(button){
+
+    const members = button.nextElementSibling;
+
+    members.classList.toggle("show");
+
+    if(members.classList.contains("show")){
+        button.innerHTML = "👥 Hide Team Members ▲";
+    }else{
+        button.innerHTML = "👥 View Team Members ▼";
+    }
+
+}
+</script>
+
+</body>
+</html>
+    <!-- Frontend -->
+<div class="team-card frontend">
+
+    <div class="icon">💻</div>
+
+    <h2>Frontend Team</h2>
+
+    <p>User Interface & User Experience</p>
+
+    <button class="toggle-btn" onclick="toggleMembers(this)">
+        👥 View Team Members ▼
+    </button>
+
+    <div class="members">
+
+        <div class="member">👤 David Effiong</div>
+        <div class="member">👤 John Michael</div>
+        <div class="member">👤 Grace Samuel</div>
+        <div class="member">👤 Member 4</div>
+        <div class="member">👤 Member 5</div>
+        <div class="member">👤 Member 6</div>
+
+    </div>
+
+</div>
+
+    <!-- Backend -->
+
+    <div class="team-card backend">
+
+        <div class="icon">⚙️</div>
+
+        <h2>Backend Team</h2>
+
+        <p>Server, Database & Logic</p>
+
+        <button class="toggle-btn" onclick="toggleMembers(this)">
+            👥 View Team Members ▼
+        </button>
+
+        <div class="members">
+
+            <div class="member">👤 Name 1</div>
+            <div class="member">👤 Name 2</div>
+            <div class="member">👤 Name 3</div>
+
+        </div>
+
+</div>
+
+    <!-- Testing -->
+
+<div class="team-card testing">
+
+        <div class="icon">🧪</div>
+
+        <h2>Testing Team</h2>
+
+        <p>Quality Assurance</p>
+        
+        <button class="toggle-btn" onclick="toggleMembers(this)">
+            👥 View Team Members ▼
+            </button>
+        <div class="members">
+
+            <div class="member">👤 Name 1</div>
+            <div class="member">👤 Name 2</div>
+            <div class="member">👤 Name 3</div>
+
+        </div>
+
+</div>
+
+    <!-- Documentation -->
+
+<div class="team-card docs">
+
+        <div class="icon">📝</div>
+
+        <h2>Documentation Team</h2>
+
+        <p>Reports & Documentation</p>
+        <button class="toggle-btn" onclick="toggleMembers(this)">
+            👥 View Team Members ▼
+        </button>
+
+        <div class="members">
+
+            <div class="member">👤 Name 1</div>
+            <div class="member">👤 Name 2</div>
+            <div class="member">👤 Name 3</div>
+
+        </div>
+
+</div>
+
+</section>
+</html>
